@@ -4,7 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "list": "ts-node --esm ./src/list-identifiers.ts",
+    "create": "ts-node --esm ./src/create-identifier.ts",
+    "credential": "ts-node --esm ./src/create-credential.ts",
+    "verify": "ts-node --esm ./src/verify-credential.ts"
+  },
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
@@ -14,6 +21,7 @@
     "@veramo/data-store": "^5.4.0",
     "@veramo/did-manager": "^5.4.0",
     "@veramo/did-provider-ethr": "^5.4.0",
+    "@veramo/did-provider-web": "^5.4.0",
     "@veramo/did-resolver": "^5.4.0",
     "@veramo/key-manager": "^5.4.0",
     "@veramo/kms-local": "^5.4.0",
